@@ -1,9 +1,0 @@
-collections:
-- name: ansible.network
-- name: ansible.posix
-- name: ansible.utils
-- name: zabbix.zabbix
-- name: netbox.netbox
-- name: arubanetworks.aoscx
-- name: ansible.netcommon
-- name: arubanetworks.aos_switch
