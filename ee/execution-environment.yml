@@ -1,0 +1,26 @@
+version: 3
+images:
+  base_image:
+    name: quay.io/centos/centos:stream10
+dependencies:
+  ansible_core:
+    package_pip: ansible-core
+  ansible_runner:
+    package_pip: ansible-runner
+  galaxy:
+    collections:
+      - name: ansible.network
+      - name: ansible.posix
+      - name: ansible.utils
+      - name: zabbix.zabbix
+      - name: netbox.netbox
+      - name: arubanetworks.aoscx
+      - name: ansible.netcommon
+      - name: arubanetworks.aos_switch
+  python:
+    - pytz
+    - pynetbox
+    - Pycurl
+options:
+  tags:
+    - nb_zb_ar_ee
